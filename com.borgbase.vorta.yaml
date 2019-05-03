@@ -23,6 +23,10 @@ finish-args:
   - --env=DCONF_USER_CONFIG_DIR=.config/dconf
   # without it, no tray icon is displayed
   - --own-name=org.kde.*
+  # allow access to keyring
+  - --talk-name=org.freedesktop.secrets
+
+
 
 modules:
   - python3-pyqt5.json  
